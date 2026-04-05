@@ -131,9 +131,39 @@
     "all-motor-mafia-t-shirt": {
       "title": "All Motor Mafia T Shirt",
       "first_seen": "2026-04-05T21:43:17.138050"
+    },
+    "ttnd": {
+      "title": "Tundra Digital Download",
+      "first_seen": "2026-04-05T23:02:58.575509"
+    },
+    "oem-eg-sticker-coming-soon": {
+      "title": "OEM+ EG Sticker - Coming Soon!",
+      "first_seen": "2026-04-05T23:02:59.285443"
+    },
+    "eg-hatch-blueprint-water-bottle": {
+      "title": "EG Hatch Blueprint Water Bottle",
+      "first_seen": "2026-04-05T23:03:00.534382"
+    },
+    "blame-the-tuner-tee": {
+      "title": "Blame The Tuner Tee",
+      "first_seen": "2026-04-05T23:03:01.157467"
+    },
+    "because-racecar-tee": {
+      "title": "Because Racecar Tee",
+      "first_seen": "2026-04-05T23:03:01.797250"
+    },
+    "build-race-break-and-repeat-tee": {
+      "title": "Build, Race, Break and Repeat tee",
+      "first_seen": "2026-04-05T23:03:02.422483"
+    },
+    "rods-blueprint-tee": {
+      "title": "Rods Blueprint Tee",
+      "first_seen": "2026-04-05T23:03:03.042369"
     }
   },
   "low_stock_alerted": [],
-  "sold_out_alerted": [],
+  "sold_out_alerted": [
+    "oem-eg-sticker-coming-soon"
+  ],
   "ig_seen_post_ids": []
 }
