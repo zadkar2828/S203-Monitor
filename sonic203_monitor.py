@@ -6,7 +6,7 @@ import instaloader
 from datetime import datetime
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-SHOP_URL          = "https://sonic203.com/products.json?limit=250"
+SHOP_URL          = "https://sonic203parts.com/products.json?limit=250"
 INSTAGRAM_USER    = "sonic203"
 STATE_FILE        = "monitor_state.json"
 LOW_STOCK_THRESH  = 20
@@ -95,8 +95,8 @@ def check_products(state: dict):
         variant_id = variant.get("id", "")
         inventory  = variant.get("inventory_quantity", None)
         available  = variant.get("available", True)
-        prod_url   = f"https://sonic203.com/products/{handle}"
-        cart_url   = f"https://sonic203.com/cart/{variant_id}:10" if variant_id else prod_url
+        prod_url   = f"https://sonic203parts.com/products/{handle}"
+        cart_url   = f"https://sonic203parts.com/cart/{variant_id}:10" if variant_id else prod_url
 
         # ── New product ──────────────────────────────────────────────────────
         if handle and handle not in known:
