@@ -163,7 +163,8 @@
   },
   "low_stock_alerted": [],
   "sold_out_alerted": [
-    "oem-eg-sticker-coming-soon"
+    "oem-eg-sticker-coming-soon",
+    "ttnd"
   ],
   "ig_seen_post_ids": []
 }
