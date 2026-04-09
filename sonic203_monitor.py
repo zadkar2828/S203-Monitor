@@ -7,8 +7,8 @@ from datetime import datetime
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
-SHOP_URL_MAIN  = “https://sonic203.com/products.json?limit=250”
-SHOP_URL_PARTS = “https://sonic203parts.com/products.json?limit=250”
+SHOP_URL_MAIN  = "https://sonic203.com/products.json?limit=250"
+SHOP_URL_PARTS = "https://sonic203parts.com/products.json?limit=250"
 INSTAGRAM_USER    = “sonic203”
 STATE_FILE        = “monitor_state.json”
 LOW_STOCK_THRESH  = 20
