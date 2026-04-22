@@ -807,6 +807,10 @@
     "sonic203.com::tlx": {
       "title": "Acura TLX Download",
       "first_seen": "2026-04-22T22:02:24.078837"
+    },
+    "sonic203.com::gtr": {
+      "title": "R35 GTR Download",
+      "first_seen": "2026-04-22T23:04:53.361173"
     }
   },
   "low_stock_alerted": [],
