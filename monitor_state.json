@@ -827,6 +827,10 @@
     "sonic203.com::trdpro": {
       "title": "TRD Pro Tundra Download",
       "first_seen": "2026-04-24T22:56:48.010869"
+    },
+    "www.fastpartsus.com::civic-sir-cluster": {
+      "title": "Civic SIR Cluster",
+      "first_seen": "2026-04-24T23:36:32.921593"
     }
   },
   "low_stock_alerted": [],
@@ -949,7 +953,8 @@
     "www.fastpartsus.com::oem-itr-faux-carbon-radio-delete",
     "www.fastpartsus.com::mugen-air-intake-dc2",
     "sonic203.com::gtr",
-    "www.fastpartsus.com::mracing-mirrors"
+    "www.fastpartsus.com::mracing-mirrors",
+    "www.fastpartsus.com::civic-sir-cluster"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
