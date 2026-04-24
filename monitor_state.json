@@ -815,6 +815,10 @@
     "sonic203.com::k24coupe": {
       "title": "k24 Civic EX Coupe Download",
       "first_seen": "2026-04-24T03:48:15.768413"
+    },
+    "www.fastpartsus.com::mugen-air-intake-dc2": {
+      "title": "Mugen Air Intake (DC2)",
+      "first_seen": "2026-04-24T19:28:55.004503"
     }
   },
   "low_stock_alerted": [],
@@ -932,7 +936,9 @@
     "sonic203parts.com::hil",
     "sonic203.com::k20civic",
     "sonic203.com::awdcivic",
-    "sonic203.com::tlx"
+    "sonic203.com::tlx",
+    "sonic203.com::k24coupe",
+    "www.fastpartsus.com::oem-itr-faux-carbon-radio-delete"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
