@@ -831,6 +831,10 @@
     "www.fastpartsus.com::civic-sir-cluster": {
       "title": "Civic SIR Cluster",
       "first_seen": "2026-04-24T23:36:32.921593"
+    },
+    "sonic203.com::rs3": {
+      "title": "Audi RS3 Download",
+      "first_seen": "2026-04-25T01:05:12.759976"
     }
   },
   "low_stock_alerted": [],
