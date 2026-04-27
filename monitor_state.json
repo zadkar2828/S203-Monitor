@@ -851,6 +851,14 @@
     "www.fastpartsus.com::arc-air-intake": {
       "title": "ARC Air Intake",
       "first_seen": "2026-04-27T19:52:37.971614"
+    },
+    "sonic203.com::k24civic": {
+      "title": "500hp Turbo k24 Civic Hatchback Download",
+      "first_seen": "2026-04-27T22:41:00.280946"
+    },
+    "www.fastpartsus.com::mugen-air-intake-ek": {
+      "title": "Mugen Air Intake (EK)",
+      "first_seen": "2026-04-27T22:41:01.879443"
     }
   },
   "low_stock_alerted": [],
@@ -981,7 +989,8 @@
     "sonic203.com::trdpro",
     "sonic203.com::rs3",
     "sonic203.com::s2000",
-    "www.fastpartsus.com::arc-air-intake"
+    "www.fastpartsus.com::arc-air-intake",
+    "www.fastpartsus.com::mugen-air-intake-ek"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
