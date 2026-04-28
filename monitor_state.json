@@ -863,6 +863,10 @@
     "www.fastpartsus.com::oem-thin-side-moldings-ek-2door": {
       "title": "OEM Thin Side Moldings (EK 2door)",
       "first_seen": "2026-04-28T20:20:24.018985"
+    },
+    "www.fastpartsus.com::vision-side-mirrors": {
+      "title": "Vision Side Mirrors",
+      "first_seen": "2026-04-28T21:35:21.386506"
     }
   },
   "low_stock_alerted": [],
