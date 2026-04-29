@@ -867,6 +867,10 @@
     "www.fastpartsus.com::vision-side-mirrors": {
       "title": "Vision Side Mirrors",
       "first_seen": "2026-04-28T21:35:21.386506"
+    },
+    "www.fastpartsus.com::spoon-reclining-seat-rails-fl5": {
+      "title": "Spoon Reclining Seat Rails (FL5)",
+      "first_seen": "2026-04-29T04:46:06.740989"
     }
   },
   "low_stock_alerted": [],
@@ -1000,7 +1004,8 @@
     "www.fastpartsus.com::mugen-air-intake-ek",
     "sonic203parts.com::4rn2",
     "www.fastpartsus.com::oem-thin-side-moldings-ek-2door",
-    "sonic203.com::k24civic"
+    "sonic203.com::k24civic",
+    "www.fastpartsus.com::spoon-steering-wheel"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
