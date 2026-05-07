@@ -907,6 +907,10 @@
     "sonic203.com::supra": {
       "title": "Turbo 6spd MK4 Supra Download",
       "first_seen": "2026-05-06T22:40:58.611804"
+    },
+    "sonic203.com::k24eg": {
+      "title": "Supercharged k24 Civic Si Download",
+      "first_seen": "2026-05-07T23:00:35.308555"
     }
   },
   "low_stock_alerted": [],
@@ -1050,7 +1054,8 @@
     "sonic203.com::trdpro",
     "sonic203parts.com::siea",
     "sonic203.com::rsx",
-    "sonic203.com::awdcivic"
+    "sonic203.com::awdcivic",
+    "www.fastpartsus.com::authentic-spoon-spark-plug-cover-pre-gen-1"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
