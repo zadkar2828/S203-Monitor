@@ -967,6 +967,14 @@
     "www.fastpartsus.com::integra-type-r-optional-rear-strut-bar": {
       "title": "Integra Type R Optional Rear Strut Bar",
       "first_seen": "2026-05-18T18:22:11.878946"
+    },
+    "sonic203parts.com::gat4": {
+      "title": "GMC Duramax 2500HD AT4 Digital Download",
+      "first_seen": "2026-05-18T20:09:47.779819"
+    },
+    "www.fastpartsus.com::ek9-civic-type-r-steering-wheel": {
+      "title": "EK9 Civic Type R Steering Wheel",
+      "first_seen": "2026-05-18T20:09:49.060948"
     }
   },
   "low_stock_alerted": [],
@@ -1121,7 +1129,10 @@
     "sonic203.com::s2k",
     "www.fastpartsus.com::ek9",
     "sonic203.com::c8z06",
-    "sonic203.com::trdpro"
+    "sonic203.com::trdpro",
+    "www.fastpartsus.com::ek9-civic-type-r-steering-wheel",
+    "www.fastpartsus.com::integra-type-r-gunmetal-wheel",
+    "www.fastpartsus.com::integra-type-r-optional-rear-strut-bar"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
