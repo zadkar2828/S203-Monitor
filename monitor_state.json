@@ -975,6 +975,10 @@
     "www.fastpartsus.com::ek9-civic-type-r-steering-wheel": {
       "title": "EK9 Civic Type R Steering Wheel",
       "first_seen": "2026-05-18T20:09:49.060948"
+    },
+    "www.fastpartsus.com::it-d": {
+      "title": "1998 Integra Type R Digital Artwork",
+      "first_seen": "2026-05-18T22:36:53.275905"
     }
   },
   "low_stock_alerted": [],
@@ -1132,7 +1136,8 @@
     "sonic203.com::trdpro",
     "www.fastpartsus.com::ek9-civic-type-r-steering-wheel",
     "www.fastpartsus.com::integra-type-r-gunmetal-wheel",
-    "www.fastpartsus.com::integra-type-r-optional-rear-strut-bar"
+    "www.fastpartsus.com::integra-type-r-optional-rear-strut-bar",
+    "sonic203.com::k24eg"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
