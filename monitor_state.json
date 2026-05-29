@@ -1015,6 +1015,14 @@
     "sonic203.com::m3": {
       "title": "BMW M3 Comp AWD Download",
       "first_seen": "2026-05-27T18:12:26.296240"
+    },
+    "www.fastpartsus.com::usdm-itr-air-vent-lhd": {
+      "title": "USDM ITR Air Vent (LHD)",
+      "first_seen": "2026-05-29T20:09:16.667849"
+    },
+    "www.fastpartsus.com::mugen-formula-shift-knob-gen-1": {
+      "title": "Mugen Formula Shift Knob Gen 1",
+      "first_seen": "2026-05-29T20:09:18.077681"
     }
   },
   "low_stock_alerted": [],
@@ -1183,7 +1191,8 @@
     "www.fastpartsus.com::nardi-gara4-black-steering-wheel",
     "sonic203.com::s2k",
     "sonic203parts.com::tndt",
-    "sonic203.com::taco"
+    "sonic203.com::taco",
+    "www.fastpartsus.com::usdm-itr-air-vent-lhd"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
