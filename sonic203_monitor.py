@@ -3,7 +3,6 @@ import os
 import re
 import time
 import requests
-import instaloader
 from datetime import datetime
 
 # ── Config ─────────────────────────────────────────────────────────────────────
@@ -35,13 +34,7 @@ IG_ACCOUNTS = [
 STATE_FILE       = "monitor_state.json"
 LOW_STOCK_THRESH = 20
 TELEGRAM_TOKEN   = os.environ["TELEGRAM_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
-IG_USERNAME      = os.environ["IG_USERNAME"]
-IG_PASSWORD      = os.environ["IG_PASSWORD"]
-
-LIST_KEYWORDS      = ["s203list.com", "airtable.com", "fastpartsus.com/pages"]
-LIST_POST_TRIGGERS = ["the list", "link in my bio", "link in bio", "view the list", "list link", "entries list"]
-WINNERS_TRIGGERS   = ["results", "the winners", "1st place", "winner is", "we have a winner"]
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]WINNERS_TRIGGERS   = ["results", "the winners", "1st place", "winner is", "we have a winner"]
 # ───────────────────────────────────────────────────────────────────────────────
 
 
@@ -196,159 +189,14 @@ def check_products(state: dict):
     state["sold_out_alerted"]  = sold_alerted
 
 
-# ── Instagram ──────────────────────────────────────────────────────────────────
-def find_list_link(text: str):
-    if not text:
-        return None
-    for kw in LIST_KEYWORDS:
-        if kw.lower() in text.lower():
-            match = re.search(r'https?://\S*' + re.escape(kw.split(".")[0]) + r'\S*', text, re.IGNORECASE)
-            if match:
-                return match.group(0).rstrip(".,;:)'\"")
-            return f"https://{kw}"
-    return None
-
-def caption_matches(caption: str, triggers: list) -> bool:
-    caption_lower = caption.lower()
-    return any(t in caption_lower for t in triggers)
-
-def check_ig_account(L, account: dict, state: dict):
-    user      = account["user"]
-    label     = account["label"]
-    live_page = account["live_page"]
-    list_url  = account["list_url"]
-    bio_key   = account["state_bio_key"]
-    seen_key  = account["state_seen_key"]
-
-    seen_ids     = state.get(seen_key, [])
-    last_bio_url = state.get(bio_key, "")
-
-    print(f"  Checking @{user} ({label})...")
-
-    try:
-        profile = instaloader.Profile.from_username(L.context, user)
-
-        # ── 1. Bio link ──────────────────────────────────────────────────────
-        bio_url = profile.external_url or ""
-        print(f"    Bio link: {bio_url}")
-
-        if bio_url and bio_url != last_bio_url:
-            state[bio_key] = bio_url
-            found = find_list_link(bio_url)
-            if found:
-                msg = (
-                    f"🎰 <b>Entry List LIVE — {label}!</b>\n\n"
-                    f"List link just appeared in the bio!\n\n"
-                    f"📋 <a href='{found}'>Open The List</a>\n\n"
-                    f"🏁 Draw happening soon — watch the live!\n"
-                    f"📍 Found in: Bio link"
-                )
-                send_telegram(msg)
-                print(f"    [LIST ALERT] Bio → {found}")
-
-        # ── 2. Stories ───────────────────────────────────────────────────────
-        try:
-            for story in L.get_stories(userids=[profile.userid]):
-                for item in story.get_items():
-                    story_id = str(item.mediaid)
-                    if story_id in seen_ids:
-                        continue
-                    seen_ids.append(story_id)
-                    caption = item.caption or ""
-                    found   = find_list_link(caption)
-                    if found:
-                        msg = (
-                            f"🎰 <b>Entry List LIVE — {label}!</b>\n\n"
-                            f"List link spotted in their Story!\n\n"
-                            f"📋 <a href='{found}'>Open The List</a>\n\n"
-                            f"🏁 Draw happening soon — watch the live!"
-                        )
-                        send_telegram(msg)
-                        print(f"    [LIST ALERT] Story → {found}")
-                    elif caption_matches(caption, LIST_POST_TRIGGERS):
-                        msg = (
-                            f"📢 <b>{label} just posted The LIST!</b>\n\n"
-                            f"Check the bio link now!\n\n"
-                            f"👉 <a href='https://www.instagram.com/{user}/'>Check Bio Link</a>\n"
-                            f"📋 Or go directly to: <a href='{list_url}'>{list_url}</a>"
-                        )
-                        send_telegram(msg)
-                        print(f"    [LIST POST] Story caption triggered")
-            print(f"    Stories checked.")
-        except Exception as e:
-            print(f"    [Stories] Could not fetch: {e}")
-
-        # ── 3. Recent posts ──────────────────────────────────────────────────
-        for i, post in enumerate(profile.get_posts()):
-            if i >= 10:
-                break
-            post_id  = post.shortcode
-            post_url = f"https://www.instagram.com/p/{post_id}/"
-            if post_id in seen_ids:
-                continue
-            seen_ids.append(post_id)
-
-            caption = post.caption or ""
-            found   = find_list_link(caption)
-
-            if found:
-                msg = (
-                    f"🎰 <b>Entry List LIVE — {label}!</b>\n\n"
-                    f"📋 <a href='{found}'>Open The List</a>\n\n"
-                    f"🏁 Draw happening soon!\n"
-                    f"📍 Found in: <a href='{post_url}'>Post</a>"
-                )
-                send_telegram(msg)
-                print(f"    [LIST ALERT] Post → {found}")
-            elif caption_matches(caption, LIST_POST_TRIGGERS):
-                msg = (
-                    f"📢 <b>{label} posted The LIST!</b>\n\n"
-                    f"Check the bio link now!\n\n"
-                    f"👉 <a href='https://www.instagram.com/{user}/'>Check Bio Link</a>\n"
-                    f"📋 Or go directly to: <a href='{list_url}'>{list_url}</a>\n\n"
-                    f"🏁 Live draw today — watch on <a href='{live_page}'>{live_page}</a>"
-                )
-                send_telegram(msg)
-                print(f"    [LIST POST] Post caption triggered")
-            elif caption_matches(caption, WINNERS_TRIGGERS):
-                msg = (
-                    f"🏆 <b>{label} Posted the Winners!</b>\n\n"
-                    f"Results are up — go check if you won!\n\n"
-                    f"👉 <a href='{post_url}'>View Winners Post</a>"
-                )
-                send_telegram(msg)
-                print(f"    [WINNERS] Post triggered")
-
-        print(f"  @{user} check complete.")
-
-    except Exception as e:
-        print(f"  [Instagram] Error checking @{user}: {e} — skipping.")
-
-    state[seen_key] = seen_ids[-100:]
-
-def check_instagram(state: dict):
-    try:
-        L = instaloader.Instaloader()
-        L.login(IG_USERNAME, IG_PASSWORD)
-    except Exception as e:
-        print(f"  [Instagram] Login failed: {e} — skipping all IG checks.")
-        return
-
-    for account in IG_ACCOUNTS:
-        check_ig_account(L, account, state)
-
-
 # ── Main ───────────────────────────────────────────────────────────────────────
 def main():
     print(f"[{datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}] Running Monitor...")
 
     state = load_state()
 
-    print("\n[1/2] Checking products...")
+    print("\nChecking products...")
     check_products(state)
-
-    print("\n[2/2] Checking Instagram...")
-    check_instagram(state)
 
     save_state(state)
     print("\nDone. State saved.")
