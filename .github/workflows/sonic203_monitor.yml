@@ -2,33 +2,32 @@ name: Sonic203 Product Monitor
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 jobs:
   check-new-products:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests instaloader
+        run: pip install requests
 
       - name: Run monitor
         env:
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          IG_USERNAME:      ${{ secrets.IG_USERNAME }}
-          IG_PASSWORD:      ${{ secrets.IG_PASSWORD }}
         run: python sonic203_monitor.py
 
       - name: Commit updated state file
