@@ -1119,6 +1119,10 @@
     "www.fastpartsus.com::s2kcr": {
       "title": "2008 Honda S2000 CR Download",
       "first_seen": "2026-07-10T23:07:33.156912"
+    },
+    "sonic203.com::grom": {
+      "title": "Honda Grom Download",
+      "first_seen": "2026-07-11T04:12:22.026333"
     }
   },
   "low_stock_alerted": [],
@@ -1311,7 +1315,9 @@
     "sonic203.com::ctr",
     "sonic203parts.com::hxs",
     "sonic203.com::s2k",
-    "www.fastpartsus.com::vision-type-dc-carbon-side-mirrors"
+    "www.fastpartsus.com::vision-type-dc-carbon-side-mirrors",
+    "sonic203.com::trdpro",
+    "www.fastpartsus.com::s2kcr"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
