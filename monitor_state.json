@@ -1123,6 +1123,10 @@
     "sonic203.com::grom": {
       "title": "Honda Grom Download",
       "first_seen": "2026-07-11T04:12:22.026333"
+    },
+    "sonic203parts.com::tndp": {
+      "title": "Tundra TRD Pro Digital Download",
+      "first_seen": "2026-07-13T17:29:15.800870"
     }
   },
   "low_stock_alerted": [],
@@ -1294,7 +1298,6 @@
     "sonic203parts.com::mdxar2",
     "www.fastpartsus.com::ec-work-mirrors",
     "www.fastpartsus.com::works-bell-rapfix-quick-releaas",
-    "sonic203.com::mdx",
     "sonic203.com::nsx",
     "www.fastpartsus.com::itr",
     "www.fastpartsus.com::integra-dc2-front-bumper-signal-lamps-left-side",
