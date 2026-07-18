@@ -1143,6 +1143,14 @@
     "www.fastpartsus.com::s2000-gauge-cluster-for-civic-eg": {
       "title": "S2000 Gauge Cluster (For Civic EG)",
       "first_seen": "2026-07-15T23:00:44.036781"
+    },
+    "sonic203.com::tundra": {
+      "title": "TRD Pro Tundra Download",
+      "first_seen": "2026-07-18T00:54:03.637138"
+    },
+    "www.fastpartsus.com::si": {
+      "title": "99 Civic SI EM1 Download",
+      "first_seen": "2026-07-18T00:54:05.053518"
     }
   },
   "low_stock_alerted": [],
