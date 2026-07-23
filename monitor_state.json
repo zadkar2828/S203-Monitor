@@ -1175,6 +1175,10 @@
     "sonic203.com::23grom": {
       "title": "Honda Grom Download",
       "first_seen": "2026-07-23T03:53:24.358351"
+    },
+    "sonic203.com::toyotruck": {
+      "title": "Toyota Pickup 4x4 Download",
+      "first_seen": "2026-07-23T22:30:46.795730"
     }
   },
   "low_stock_alerted": [],
