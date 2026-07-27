@@ -1187,6 +1187,10 @@
     "sonic203.com::hawk": {
       "title": "Trackhawk Download",
       "first_seen": "2026-07-25T17:29:37.878597"
+    },
+    "sonic203.com::is250": {
+      "title": "Lexus IS250 F-Sport AWD Download",
+      "first_seen": "2026-07-27T05:08:52.563390"
     }
   },
   "low_stock_alerted": [],
@@ -1397,7 +1401,8 @@
     "www.fastpartsus.com::civi",
     "sonic203.com::toyotruck",
     "sonic203.com::gtr",
-    "sonic203.com::accord"
+    "sonic203.com::accord",
+    "sonic203.com::hawk"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
