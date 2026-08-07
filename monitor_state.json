@@ -1227,6 +1227,10 @@
     "sonic203.com::acura": {
       "title": "Acura TL Tech Download",
       "first_seen": "2026-08-05T20:06:27.647149"
+    },
+    "sonic203.com::denali": {
+      "title": "GMC Yukon Denali Download",
+      "first_seen": "2026-08-07T15:24:00.463900"
     }
   },
   "low_stock_alerted": [],
