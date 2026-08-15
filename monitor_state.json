@@ -1243,6 +1243,10 @@
     "sonic203.com::sport": {
       "title": "Accord Sport Download",
       "first_seen": "2026-08-13T17:59:18.047796"
+    },
+    "sonic203.com::mdxawd": {
+      "title": "MDX Advanced AWD Download",
+      "first_seen": "2026-08-15T02:31:30.151818"
     }
   },
   "low_stock_alerted": [],
