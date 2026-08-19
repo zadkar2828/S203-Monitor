@@ -6,9 +6,8 @@ from datetime import datetime
 
 # Config
 SHOPS = [
-    {"label": "Sonic203",       "url": "https://sonic203.com/products.json?limit=250",       "site": "sonic203.com"},
-    {"label": "Sonic203 Parts", "url": "https://sonic203parts.com/products.json?limit=250",   "site": "sonic203parts.com"},
-    {"label": "Fast Parts US",  "url": "https://www.fastpartsus.com/products.json?limit=250", "site": "www.fastpartsus.com"},
+    {"label": "Sonic203",       "url": "https://sonic203.com/products.json?limit=250",     "site": "sonic203.com"},
+    {"label": "Sonic203 Parts", "url": "https://sonic203parts.com/products.json?limit=250", "site": "sonic203parts.com"},
 ]
 
 STATE_FILE       = "monitor_state.json"
