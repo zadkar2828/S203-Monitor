@@ -1283,6 +1283,10 @@
     "sonic203.com::tacoma": {
       "title": "Tacoma 4x4 Download",
       "first_seen": "2026-08-25T20:57:13.831173"
+    },
+    "sonic203.com::fj": {
+      "title": "Toyota FJ Cruiser Download",
+      "first_seen": "2026-08-29T01:27:15.065003"
     }
   },
   "low_stock_alerted": [],
