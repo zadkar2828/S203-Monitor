@@ -1291,6 +1291,10 @@
     "sonic203.com::c6z06": {
       "title": "C6 Z06 Corvette Download",
       "first_seen": "2026-08-29T17:30:53.565762"
+    },
+    "sonic203parts.com::evo9": {
+      "title": "Evo 9 MR Download",
+      "first_seen": "2026-08-30T23:09:10.907044"
     }
   },
   "low_stock_alerted": [],
@@ -1519,7 +1523,9 @@
     "sonic203.com::acuratlx",
     "sonic203parts.com::trd4r",
     "sonic203.com::mdx",
-    "sonic203.com::gtr"
+    "sonic203.com::gtr",
+    "sonic203.com::c6z06",
+    "sonic203.com::fj"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
