@@ -1295,6 +1295,10 @@
     "sonic203parts.com::evo9": {
       "title": "Evo 9 MR Download",
       "first_seen": "2026-08-30T23:09:10.907044"
+    },
+    "sonic203parts.com::evo9gsr": {
+      "title": "2006 Evo 9 GSR Download",
+      "first_seen": "2026-08-31T01:27:24.387833"
     }
   },
   "low_stock_alerted": [],
