@@ -1323,6 +1323,10 @@
     "sonic203.com::supra-mk4-mouse-pad": {
       "title": "Supra MK4 Mouse Pad",
       "first_seen": "2026-09-08T04:17:38.486570"
+    },
+    "sonic203.com::trdproseq": {
+      "title": "Sequoia TRD Pro Download",
+      "first_seen": "2026-09-09T15:54:41.889926"
     }
   },
   "low_stock_alerted": [],
@@ -1558,7 +1562,8 @@
     "sonic203.com::sequoia",
     "sonic203.com::aspecmdx",
     "sonic203.com::rotrexek",
-    "sonic203parts.com::fk8"
+    "sonic203parts.com::fk8",
+    "sonic203.com::k24eg"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
