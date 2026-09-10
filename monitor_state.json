@@ -1327,6 +1327,10 @@
     "sonic203.com::trdproseq": {
       "title": "Sequoia TRD Pro Download",
       "first_seen": "2026-09-09T15:54:41.889926"
+    },
+    "sonic203.com::rx350": {
+      "title": "Lexus RX350 AWD Download",
+      "first_seen": "2026-09-10T13:00:45.857282"
     }
   },
   "low_stock_alerted": [],
