@@ -1335,6 +1335,10 @@
     "sonic203.com::25ctr": {
       "title": "Civic Type-R FL5 Download",
       "first_seen": "2026-09-12T18:34:15.987777"
+    },
+    "sonic203.com::tsx": {
+      "title": "TSX Download",
+      "first_seen": "2026-09-12T21:11:50.852316"
     }
   },
   "low_stock_alerted": [],
