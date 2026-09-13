@@ -1339,6 +1339,10 @@
     "sonic203.com::tsx": {
       "title": "TSX Download",
       "first_seen": "2026-09-12T21:11:50.852316"
+    },
+    "sonic203parts.com::at4": {
+      "title": "GMC AT4 Duramax 2500HD 4x4 Download",
+      "first_seen": "2026-09-13T23:52:22.853198"
     }
   },
   "low_stock_alerted": [],
