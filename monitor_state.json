@@ -1343,6 +1343,10 @@
     "sonic203parts.com::at4": {
       "title": "GMC AT4 Duramax 2500HD 4x4 Download",
       "first_seen": "2026-09-13T23:52:22.853198"
+    },
+    "sonic203.com::eg6": {
+      "title": "Eg6 Sir Download",
+      "first_seen": "2026-09-18T23:27:38.219721"
     }
   },
   "low_stock_alerted": [],
@@ -1581,7 +1585,8 @@
     "sonic203.com::trdproseq",
     "sonic203parts.com::at4",
     "sonic203.com::s15",
-    "sonic203.com::sienna"
+    "sonic203.com::sienna",
+    "sonic203.com::nsx"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
