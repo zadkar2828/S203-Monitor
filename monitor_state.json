@@ -1355,6 +1355,10 @@
     "sonic203parts.com::mdxs": {
       "title": "Acura MDX Type-S AWD Download",
       "first_seen": "2026-09-20T20:18:54.509801"
+    },
+    "sonic203.com::x5m": {
+      "title": "BMW X5M Competition AWD Download",
+      "first_seen": "2026-09-22T16:21:07.294900"
     }
   },
   "low_stock_alerted": [],
@@ -1596,7 +1600,8 @@
     "sonic203.com::nsx",
     "sonic203.com::eg6",
     "sonic203.com::tundrapro",
-    "sonic203.com::is250"
+    "sonic203.com::is250",
+    "sonic203parts.com::mdxs"
   ],
   "ig_seen_post_ids": [],
   "ig_last_bio_url": ""
